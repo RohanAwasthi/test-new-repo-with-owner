@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "test-application"
+  labels:
+    system: web-apps
+  links:
+    - url: https://github.com/RohanAwasthi/test-new-repo-with-owner
+      title: "test-application"
+      icon: code
+  tags:
+    - java
+    - "applicationtype-webapplication"
+  annotations:
+    jenkins.io/github-folder: test-e-com-folder/test-e-com-job
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: RohanAwasthi/test-new-repo-with-owner
+    sonarqube.org/project-key: 'JtSpringProject/rachit'
+spec:
+  type: service
+  lifecycle: development
+  owner: "user:default/rachit.awasthi"
+  ownerEmail: 
